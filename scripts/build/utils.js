@@ -1,8 +1,4 @@
-/*
- * @Author: tackchen
- * @Date: 2022-08-03 20:41:31
- * @Description: Coding something
- */
+
 const fs = require('fs');
 const path = require('path');
 const childProcess = require('child_process');

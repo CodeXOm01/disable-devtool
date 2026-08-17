@@ -1,8 +1,4 @@
-/*
- * @Author: tackchen
- * @Date: 2022-09-28 00:48:05
- * @Description: Coding something
- */
+
 const {read, write, mkdirDir, copyFile} = require('../utils');
 
 function modIndexHtmlVersion () {

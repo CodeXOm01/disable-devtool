@@ -1,8 +1,4 @@
-/*
- * @Author: tackchen
- * @Date: 2022-08-03 20:37:59
- * @Description: Coding something
- */
+
 const {build} = require('esbuild');
 const {resolve} = require('path');
 const {yamlPlugin} = require('esbuild-plugin-yaml');

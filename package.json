@@ -21,15 +21,13 @@
         "url": "https://github.com/CodeXOm01/disable-devtool/issues"
     },
     "homepage": "",
-    "author": "theajack",
+    "author": "CodeXOm01",
     "repository": {
         "type": "git",
         "url": "https://github.com/CodeXOm01/disable-devtool"
     },
     "keywords": [
-        "disable-devtool",
-        "禁用F12",
-        "禁用开发者工具"
+        "disable-devtool"
     ],
     "license": "MIT",
     "devDependencies": {

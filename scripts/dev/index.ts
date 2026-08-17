@@ -1,8 +1,4 @@
-/*
- * @Author: tackchen
- * @Date: 2022-09-27 21:46:40
- * @Description: Coding something
- */
+
 import disableDevtool from '../../src';
 // import disableDevtool from '../../npm';
 

@@ -1,8 +1,4 @@
-/*
- * @Author: tackchen
- * @Date: 2022-08-03 20:40:33
- * @Description: Coding something
- */
+
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import {babel} from '@rollup/plugin-babel';
 import dts from 'rollup-plugin-dts';
@@ -22,7 +18,7 @@ const inputFile = resolveRootPath('src/index.ts');
 
 const config = [
   {
-    // 编译typescript, 生成 js 文件
+   
     input: inputFile,
     output: {
       file: resolveRootPath('npm/disable-devtool.min.js'),
@@ -46,7 +42,7 @@ const config = [
     external: packageInfo.dependencies,
   },
   {
-    // 生成 .d.ts 类型声明文件
+  
     input: inputFile,
     output: {
       file: resolveRootPath('npm/index.d.ts'),

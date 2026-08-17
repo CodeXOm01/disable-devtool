@@ -1,8 +1,3 @@
-/*
- * @Author: tackchen
- * @Date: 2022-08-03 21:07:04
- * @Description: Coding something
- */
 
 const execa = require('execa');
 const {resolveRootPath, copyFile, buildPackageJson, writeJsonIntoFile, write} = require('./utils');

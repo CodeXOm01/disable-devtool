@@ -1,0 +1,36 @@
+
+import {config} from './config';
+import {IS} from './util';
+
+export let log: (...data: any[]) => void;
+export let table: (...data: any[]) => void;
+let clear: () => void;
+
+export function initLogs () {
+  const console = window.console || {
+    log: function () {
+      return;
+    },
+    table: function () {
+      return;
+    },
+    clear: function () {
+      return;
+    }
+  };
+  if (IS.ie) {
+   
+    log = (...args: any[]) => {return console.log(...args);};
+    table = (...args: any[]) => {return console.table(...args);};
+    clear = () => {return console.clear();};
+  } else {
+    log = console.log;
+    table = console.table;
+    clear = console.clear;
+  }
+}
+
+export function clearLog () {
+  if (config.clearLog)
+    clear();
+}

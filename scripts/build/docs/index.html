@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable web developer tools with one line</title>
+    <style>
+        code{
+            white-space: pre;
+            font-family: Consolas, "Courier New", monospace;
+            color: #fff;
+            background-color: #444;
+            display: block;
+            overflow-x: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        body{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a style='color:#222' href='https://www.github.com/CodeXOm01/disable-devtool'>Disable-devtool</a></h1>
+    <h3 id="version"></h3>
+
+    <h2>🚀 Disable web developer tools with one line </h2>
+    
+ 
+
+    <h2>1. Quick use</h2>
+
+
+    <h3>1.1 npm reference</h3>
+
+    <p><code>npm i disable-devtool</code></p>
+
+    <p>
+        <code>import disableDevtool from&#39;disable-devtool&#39;;
+disableDevtool();</code>
+    </p>
+
+    <h3>1.2 script attribute configuration</h3>
+
+    <p><code>&lt;script disable-devtool-auto src=&#39;https://cdn.jsdelivr.net/npm/disable-devtool&#39;&gt;&lt;/script&gt;</code></p>
+
+    <p>Or use cdn with version:</p>
+
+    <p><code>&lt;!--Use a specific version-->
+&lt;script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'>&lt;/script>
+&lt;!--Use latest version-->
+&lt;script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'>&lt;/script></code></p>
+
+    <div style="margin-bottom: 50px">
+        TOOL:
+        <input type="text" id='md5_key' placeholder="Enter a key">
+        <button onclick="generateMd5()">Generate md5 tk</button>
+        <span id='md5_value'></span>
+    </div>
+
+    <script 
+        disable-devtool-auto 
+        md5='1aabac6d068eef6a7bad3fdf50a05cc8' 
+        src='https://cdn.jsdelivr.net/npm/disable-devtool@0.2.6/disable-devtool.min.js#use'
+    ></script>
+    
+    <script>
+        document.getElementById('version').innerText = 'version = ' + DisableDevtool.version;
+        function setText(text){
+            document.getElementById('md5_value').innerText = text;
+        }
+        function generateMd5(){
+            if(!window.DisableDevtool){
+                alert('DisableDevtool not ready');
+                return;
+            }
+            let key = document.getElementById('md5_key').value;
+            if(!key){
+                alert('Key is empty');
+                return;
+            }
+            setText(DisableDevtool.md5(key));
+        }
+    </script>
+</body>
+
+</html>

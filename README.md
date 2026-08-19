@@ -38,7 +38,7 @@ Or cite by version:
 <!--Use the specified version-->
 <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'></script>
 <!--Use latest version-->
-<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+<script disable-devtool-auto src='https://disable-devtool.netlify.app/cdnfile.js'></script>
 ```
 
 ### 1.3 False trigger problem location help
